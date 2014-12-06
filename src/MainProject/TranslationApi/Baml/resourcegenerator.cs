@@ -40,13 +40,11 @@ namespace TranslationApi.Baml
                 case FileType.BAML:
                     {
                         throw new Exception("Is not supported yet");
-                        break;
                     }
 
                 case FileType.RESOURCES:
                     {
                         throw new Exception("Is not supported yet");
-                        break;
                     }
 
                 case FileType.EXE:

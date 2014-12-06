@@ -146,24 +146,13 @@ namespace TranslationApi.Baml
                 // the rest of the fields are either all null,
                 // or all non-null. If all null, it means the resource entry is deleted.
 
-                if (bamlString.Category == null)
-                {
-                    // it means all the following fields are null starting from column #3.
-                    resource = null;
-                }
-                else
-                {
-                    resource = new BamlLocalizableResource();
-                    resource.Category = bamlString.Category;
-                    resource.Readable = (bool)BoolTypeConverter.ConvertFrom(bamlString.Readability);
-                    resource.Modifiable = (bool)BoolTypeConverter.ConvertFrom(bamlString.Modifiable);
-                    resource.Comments = bamlString.Comments;
-                    resource.Content = bamlString.Content;
-
-                    // in case content being the last column, consider null as empty.
-                    if (resource.Content == null)
-                        resource.Content = string.Empty;
-                }
+                resource = new BamlLocalizableResource();
+                resource.Category = bamlString.Category;
+                resource.Readable = (bool)BoolTypeConverter.ConvertFrom(bamlString.Readability);
+                resource.Modifiable = (bool)BoolTypeConverter.ConvertFrom(bamlString.Modifiable);
+                resource.Comments = bamlString.Comments;
+                // in case content being the last column, consider null as empty.
+                resource.Content = bamlString.Content ?? string.Empty;
 
                 // at this point, we are good.
                 // add to the dictionary.
