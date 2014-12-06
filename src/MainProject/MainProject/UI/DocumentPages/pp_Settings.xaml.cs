@@ -95,8 +95,6 @@ namespace MainProject.UI.DocumentPages
             }
         }
 
-        bool __IsAddAssemblyVisible;
-
         private async void AddRemoveAssembly(object sender, RoutedEventArgs e)
         {
             p_SetupPathAndAssemblies setupPage = new p_SetupPathAndAssemblies();
