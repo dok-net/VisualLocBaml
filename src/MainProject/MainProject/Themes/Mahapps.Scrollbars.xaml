@@ -571,7 +571,7 @@
 
     <Style x:Key="MetroScrollViewer"
            TargetType="{x:Type ScrollViewer}">
-        <Setter Property="Controls:ControlsHelper.VerticalScrollBarOnLeftSide"
+        <Setter Property="Controls:ScrollBarHelper.VerticalScrollBarOnLeftSide"
                 Value="False" />
         <Setter Property="Template">
             <Setter.Value>
@@ -620,7 +620,7 @@
                                    ViewportSize="{TemplateBinding ViewportWidth}" />
                     </Grid>
                     <ControlTemplate.Triggers>
-                        <Trigger Property="Controls:ControlsHelper.VerticalScrollBarOnLeftSide"
+                        <Trigger Property="Controls:ScrollBarHelper.VerticalScrollBarOnLeftSide"
                                  Value="True">
                             <Setter TargetName="leftColumn"
                                     Property="Width"
