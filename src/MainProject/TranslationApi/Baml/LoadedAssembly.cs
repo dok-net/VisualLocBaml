@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Resources;
@@ -43,14 +44,8 @@ namespace TranslationApi.Baml
 
         public static bool IsNetAssembly(string path)
         {
-            var sb = new StringBuilder(256);
-            int written;
-            var hr = GetFileVersion(path, sb, sb.Capacity, out written);
-            return hr == 0;
+            return null != FileVersionInfo.GetVersionInfo(path).FileVersion;
         }
-
-        [DllImport("mscoree.dll", CharSet = CharSet.Unicode)]
-        private static extern int GetFileVersion(string path, StringBuilder buffer, int buflen, out int written);
 
         public List<BamlString> ExtractTranslationLines()
         {
