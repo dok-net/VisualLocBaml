@@ -26,8 +26,6 @@
         <TextBlock TextWrapping="Wrap" Margin="0,3,0,0" FontSize="16" MaxWidth="700" HorizontalAlignment="Left">1. An incorrect path was selected which doesn't contains assemblies.</TextBlock>
         <TextBlock TextWrapping="Wrap" Margin="0,3,0,0" FontSize="16" MaxWidth="700" HorizontalAlignment="Left">2. Assemblies were not build localizable.</TextBlock>
 
-        <TextBlock Margin="0,3,0,0" FontSize="16" HorizontalAlignment="Left" MaxWidth="700" TextWrapping="Wrap"><Run Text="Instruction how to build localizable assemblies can be found here:"/><LineBreak/><Hyperlink Click="Hyperlink_Click"><Run Text="http://wpflocalizer.com/guide/localizableassemblies/"/></Hyperlink></TextBlock>
-
         <TextBlock Margin="0,20,0,0" FontSize="16" HorizontalAlignment="Left" MaxWidth="700" TextWrapping="Wrap">Please go back and select path with localizable assemblies to continue.</TextBlock>
         <Button Width="90" IsDefault="True" Click="Back_Click" Height="30" Margin="0,20,8,20" Content="Back" 
                 HorizontalAlignment="Left">
