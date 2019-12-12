@@ -42,6 +42,6 @@
         <l:MetroButton Grid.Row="2" Grid.Column="2" Margin="2,2,4,2" Background="#6bc4f7" Foreground="White">View</l:MetroButton>
         <l:MetroButton Grid.Row="2" Grid.Column="3" Margin="4,2,2,2" Background="#6a6a6a" Foreground="White">Export for translation...</l:MetroButton>
         <l:MetroButton Grid.Row="2" Grid.Column="4" Margin="2,2,4,2" Background="#9f9f9f" Foreground="White">Import translated...</l:MetroButton>
-        <l:MetroButton Grid.Row="2" Grid.Column="5" Margin="4,2,2,2" Background="#02821d" Foreground="White">Generate sattelite libraries</l:MetroButton>
+        <l:MetroButton Grid.Row="2" Grid.Column="5" Margin="4,2,2,2" Background="#02821d" Foreground="White">Generate satellite libraries</l:MetroButton>
     </Grid>
 </UserControl>

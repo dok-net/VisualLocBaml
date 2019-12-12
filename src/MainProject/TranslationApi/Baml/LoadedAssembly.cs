@@ -113,14 +113,14 @@ namespace TranslationApi.Baml
             }
         }
 
-        public void GenerateSatteliteAssembly(string cultureCode, List<BamlString> translatedStrings, string satteliteTargetFileName)
+        public void GenerateSatelliteAssembly(string cultureCode, List<BamlString> translatedStrings, string satelliteTargetFileName)
         {
             CultureInfo cultureInfo = new CultureInfo(cultureCode);
 
             ResourceGenerationOptions generationOptions = 
                 new ResourceGenerationOptions(
                         AppDomain.CurrentDomain, __Assembly, __FileName, 
-                        cultureInfo, translatedStrings, satteliteTargetFileName);
+                        cultureInfo, translatedStrings, satelliteTargetFileName);
 
             LocBaml.GenerateBamlResources(generationOptions);
         }

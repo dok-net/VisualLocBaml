@@ -46,13 +46,13 @@ namespace MainProject.UI.DocumentPages
     /// </summary>
     public partial class pp_LanguagesExport : Page
     {
-        private string __OutpuFolder;
+        private string __OutputFolder;
         private ObservableCollection<CultureItem> __Cultures;
         private bool __ExportAllStrings;
 
         public pp_LanguagesExport()
         {
-            __OutpuFolder = "";
+            __OutputFolder = "";
 
             InitializeComponent();
             DataContext = this;
@@ -64,12 +64,12 @@ namespace MainProject.UI.DocumentPages
         {
             get
             {
-                return __OutpuFolder;
+                return __OutputFolder;
             }
 
             set
             {
-                __OutpuFolder = value;
+                __OutputFolder = value;
                 
             }
         }
