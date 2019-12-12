@@ -88,7 +88,7 @@ CREATE TABLE translated_strings (
   translation     TEXT NOT NULL,
 
   FOREIGN KEY (string_id) REFERENCES strings_ids(id) ON DELETE CASCADE
-  FOREIGN KEY (culture_code) REFERENCES cultures(culture_code collate nocase) ON DELETE CASCADE
+  FOREIGN KEY (culture_code) REFERENCES cultures(culture_code) ON DELETE CASCADE
 );
 
 CREATE INDEX translated_strings_revision ON translated_strings(revision);
